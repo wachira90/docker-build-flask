@@ -42,6 +42,8 @@ pip install Flask
 ## run docker
 
 ```sh
+docker build -t flask:v1.0 .
+
 docker run -it --name flask -p 7000:3000 -d flask:v1.0
 
 docker run -it --name flask -p 7000:3000 flask:v1.0
