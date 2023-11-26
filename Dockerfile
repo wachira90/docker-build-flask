@@ -1,5 +1,6 @@
 FROM python:3.7.17-slim
 WORKDIR /app
+EXPOSE 3000
 COPY req.txt /app
 RUN pip3 install -r req.txt
 COPY main.py /app
